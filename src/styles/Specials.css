@@ -1,0 +1,85 @@
+.specialsSection {
+    margin-top: 10rem;
+    margin-bottom: 7rem;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.specialsHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+   
+}
+.specialsHeader button {
+    background-color: #F4CE14;
+    border: none;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border-radius: 16pt;
+    font-size: 18pt;
+    font-weight: bold;
+}
+.cardSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+ 
+}
+.card{ 
+    background-color: #EDEFEE;
+    flex: 0 1 24%;
+    margin: 1rem;
+    border-radius: 16px 16px 0 0;
+    max-width: 300px;
+    
+
+   
+}
+.cardDetails{
+    padding: 1rem;
+    display: block;
+}
+.cardTitle {
+    display: flex;
+    justify-content:space-between;
+    padding-left: 10px;
+    
+}
+
+.text {
+    height: 160px;
+    padding: 10px;
+    text-align: start;
+    
+}
+
+.cardImg{
+   width: 300px;
+   max-height: 200px;
+   border-radius: 16px 16px 0 0;
+}
+.orderBtn {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 10px;
+   padding-bottom: 10px;
+   padding-top: 5rem;
+}
+.card p {
+    font-size: 18px;
+
+}
+
+@media screen and (max-width: 768px) {
+.specialsHeader {
+    display: flex;
+    flex-direction: column;
+}
+.specialsHeader button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+}

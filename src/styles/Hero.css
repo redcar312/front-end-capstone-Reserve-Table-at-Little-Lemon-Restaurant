@@ -1,0 +1,81 @@
+.hero {
+    display: flex;
+    background-color: #495e57;
+    padding: 6% 15%;
+    height: 32rem;
+    width: 100%;
+  
+}
+.heroLeft, .heroRight {
+    width: 50%;
+}
+.heroImg{
+    
+    max-width: 100%;
+    float: right;
+    aspect-ratio: 5/6;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    max-height: 150%;
+}
+
+.hero p {
+    color: #FFFFFF;
+    width: 300px;
+    
+}
+.hero h1 {
+    color:#F4CE14;
+    
+}
+
+.hero h2 {
+    color: #FFFFFF;
+    font-size: 22pt;
+}
+
+.hero a {
+    background-color: #F4CE14;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    
+    border-radius: 16pt;
+    font-family: 'Markazi Text', serif;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        display: flex;
+        width: 100%;
+       align-items: center;
+        justify-content: center;
+        padding-bottom: 3rem;
+        padding-top: 2rem;
+    }
+    
+    .heroLeft{
+        width: 100%;
+    }
+    .heroRight{
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 44pt;
+    }
+    
+    .hero p {
+        font-size: 16pt;
+        
+    }
+    .hero a {
+        
+        font-size: 16pt;
+        
+    }
+}

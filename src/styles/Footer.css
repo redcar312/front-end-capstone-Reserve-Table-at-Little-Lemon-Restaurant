@@ -1,0 +1,30 @@
+footer  {
+ display: flex;
+ flex-wrap: wrap;
+ width: 100%;
+ height: auto;
+ justify-content: space-between;
+ margin-top: 10rem;
+ background-color: #495e57;
+ padding-bottom: 5rem;
+ padding-top: 3rem;
+}
+
+footer div {
+    flex: 0 1 24%;
+    
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+footer li {
+    color: #ffffff;
+}

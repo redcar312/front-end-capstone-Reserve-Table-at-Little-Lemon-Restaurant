@@ -1,0 +1,88 @@
+
+nav  {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 15%;
+  margin-right: auto;
+  margin-left: auto;
+  position: fixed;
+  transition: 350ms ;
+  width: 100%;
+  background-color: #ffffff;
+  
+ 
+  
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 10px;
+    
+}
+
+
+
+
+.hamburger {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    display: none;
+    
+
+}
+nav a {
+  font-family: 'Markazi Text', serif;
+    font-weight: bold;
+    font-size: 18pt;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .navigation-menu ul {
+      display: none;      
+      position: absolute;
+      top: 56px;
+      
+      right: 0;
+      flex-direction: column;
+  
+      width: 100%;
+    
+      background-color: white;
+      border-top: 1px solid black;
+    }
+    .navigation-menu li {
+      
+      text-align: center;
+      margin: 0;
+    }
+    .navigation-menu li a {
+      background-color: black;
+      color: #ffffff;
+      text-decoration: none;
+      width: 100%;
+      padding: rem 0;
+      font-size: 22pt;
+      display: block;
+      
+    }
+    
+
+    .navigation-menu.expanded ul {
+        display: block;
+      }
+  }
