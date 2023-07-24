@@ -5,10 +5,12 @@ import john from '../images/john.PNG'
 import bill from '../images/Bill.PNG'
 import sarah from '../images/sarah.PNG'
 import rollo from '../images/Rollo.PNG'
+import { icon } from '@fortawesome/fontawesome-svg-core'
 
 export default function testimonials(){
     const testimonials = [
         {
+           id:0, 
            amount: 3,
            name: "John",
            description: "It was ok",
@@ -17,19 +19,23 @@ export default function testimonials(){
             
         },
         {
+            id:1,
             amount: 5,
             name:"Bill",
             description: "The best food i've ever had!",
             picture: bill
         },
-        { amount: 4,
+        { 
+            id:2,
+            amount: 4,
           name: "Sarah",
           description: "The Greek salad was fantastic!",
           picture: sarah
 
         },
 
-        {
+        {   
+            id:3,
             amount:5,
             name: "Ronald",
             description: "The food was great!",
@@ -40,7 +46,7 @@ export default function testimonials(){
     let  test = testimonials.map((testimonial) => {{
             
             
-            return(<div className='testimonialCard'> 
+            return(<div key={testimonial.id} className='testimonialCard'> 
                 
                 
                 
@@ -54,7 +60,7 @@ export default function testimonials(){
                 <div className='ratingBlock'>
                 {[...Array(testimonial.amount)].map(() => {
                     return (
-                        <FontAwesomeIcon icon={faStar} style={{color: "#f5e10a",}} size={"lg"}></FontAwesomeIcon>
+                        <FontAwesomeIcon  icon={faStar} style={{color: "#f5e10a",}} size={"lg"}></FontAwesomeIcon>
                     )
                 })}
                 </div>

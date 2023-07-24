@@ -1,7 +1,7 @@
 import lemonDessert from '../images/lemon dessert.jpg'
 import greekSalad from '../images/greek salad.jpg'
 import bruchetta from '../images/bruchetta.svg'
-import { MdDeliveryDining } from "react-icons/md";
+
 import '../styles/Specials.css'
 export default function Specials(){
 
@@ -26,15 +26,15 @@ const specials = [
     }
 ]  
     
-let cards = specials.map((special) => {
-    return (<div className='card'>
+let cards = specials.map((special, index) => {
+    return (<div key={index} className='card'>
         <div>
             <img src={special.img} className='cardImg'></img>
         </div>
         <div className='cardDetails'>
         <div className='cardTitle'>
             <h3>{special.title}</h3>
-            <h3>{special.price}</h3>
+            <h3 style={{color: 'orange'}}>{special.price}</h3>
         </div>
         <div className='text'>
             <p>{special.description}</p>

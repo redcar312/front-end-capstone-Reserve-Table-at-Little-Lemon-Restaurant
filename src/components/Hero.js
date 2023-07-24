@@ -1,7 +1,8 @@
 import heroImg from '../images/restauranfood.jpg'
 import '../styles/Hero.css'
-
+import { Link } from 'react-router-dom'
 export default function Hero() {
+
     return(<div>
         <section className='hero'>
             <div className='heroLeft'>
@@ -13,7 +14,7 @@ export default function Hero() {
                   <p>We are a family owned Mediterranean restaurant,
                     focused on traditional recipes whit a modern twist.
                   </p>
-                  <a>Reserve a table</a>
+                  <Link to="/reservations">Reserve a table</Link>
                 </div>
             </div>
             <div className='heroRight'>

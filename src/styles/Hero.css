@@ -40,13 +40,16 @@
     padding-bottom: 0.5rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    
+    text-decoration: none;
     border-radius: 16pt;
     font-family: 'Markazi Text', serif;
     font-weight: bold;
     font-size: 18pt;
+    color:black;
 }
-
+.hero a:hover {
+    background-color: #C2A009;
+}
 
 @media screen and (max-width: 768px) {
     .hero {
