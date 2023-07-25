@@ -53,7 +53,7 @@ export default function testimonials(){
                 
                 <div className='imgBlock'>
                     <picture>
-                        <img src={testimonial.picture} ></img>
+                        <img src={testimonial.picture} alt='Profile picture' ></img>
                     </picture>
                     <h2>{testimonial.name}</h2>
                 </div>

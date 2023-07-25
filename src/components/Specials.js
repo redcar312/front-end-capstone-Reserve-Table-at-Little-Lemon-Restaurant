@@ -29,7 +29,7 @@ const specials = [
 let cards = specials.map((special, index) => {
     return (<div key={index} className='card'>
         <div>
-            <img src={special.img} className='cardImg'></img>
+            <img src={special.img} alt='Picture of the dish' className='cardImg'></img>
         </div>
         <div className='cardDetails'>
         <div className='cardTitle'>

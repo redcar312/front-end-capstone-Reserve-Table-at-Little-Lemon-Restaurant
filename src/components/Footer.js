@@ -4,7 +4,7 @@ import logo from '../images/Asset 9@4x.png'
 export default function Footer(){
     return(<footer>
         <div className="logo">
-            <img src={logo}></img>
+            <img src={logo} alt='logo'></img>
         </div>
         <div className="navigation">´
   

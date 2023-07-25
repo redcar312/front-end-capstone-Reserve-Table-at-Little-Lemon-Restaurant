@@ -13,8 +13,8 @@ export default function Chicago (){
             </div>
             <div className="right">
                 <picture>
-                    <img src={img1} className='img1'></img>
-                    <img src={img2}></img>
+                    <img src={img1} alt="Picture of the owners of Little lemon" className='img1'></img>
+                    <img src={img2} alt='Second Picture of the owners of the Little Lemon restaurant.'></img>
                 </picture>
             </div>
         </section>
